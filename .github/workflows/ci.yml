@@ -1,0 +1,13 @@
+name: CI
+
+on: pull_request
+
+jobs:
+  unittests:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: awalsh128/cache-apt-pkgs-action@latest
+      with:
+        packages: libsdl2-dev build-essential gcc-aarch64-linux-gnu binutils-aarch64-linux-gnu
+        version: 1.0
