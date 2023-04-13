@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - uses: awalsh128/cache-apt-pkgs-action@latest
+    - uses: awalsh128/cache-apt-pkgs-action@v1.2.4
       with:
         packages: libsdl2-dev build-essential gcc-aarch64-linux-gnu binutils-aarch64-linux-gnu
         version: 1.0
